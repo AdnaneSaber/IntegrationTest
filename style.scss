@@ -1,0 +1,200 @@
+$green:#274C46;
+$yellow:#fc0;
+
+@mixin dfja {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+.landing {
+    background-color: $green;
+
+    .container.header {
+        padding: 0 5%;
+
+        nav {
+            height: 80px;
+            padding: 0;
+
+            .navbar-toggler {
+                background-color: $yellow;
+                color: $green;
+            }
+
+            .collapse,
+            .collapsing {
+                background-color: $green;
+                z-index: 9;
+
+
+                ul {
+                    @include dfja();
+                    margin-left: auto;
+                    min-width: fit-content;
+
+                    li.nav-item {
+                        .nav-link {
+                            color: #fff;
+                            font-size: 13px;
+                            text-transform: uppercase;
+
+                        }
+                    }
+                }
+
+                .navs {
+                    // margin-left: auto;
+                    background-color: $yellow;
+                    height: 100%;
+                    min-width: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+
+                    .nava {
+                        width: 33.33%;
+                        text-align: center;
+                        height: 45px;
+                        position: relative;
+                        color: $green;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .carouselContainer {
+        display: flex;
+        flex-direction: column;
+
+        .carousel.slide {
+            height: 500px;
+
+            img {
+                object-fit: cover;
+            }
+
+            * {
+                height: 100%;
+            }
+        }
+
+        .carouselContent {
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            border-bottom: 4px solid #fc0;
+
+            h5 {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.secondDiv {
+    padding: 2%;
+
+    .swiper-button:after,
+    .swiper-button:after {
+        color: $green !important;
+    }
+
+    .slidCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h6 {
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+
+    }
+}
+
+.thirdDiv {
+    display: flex;
+    padding-top: 70px;
+    position: relative;
+
+    @media screen and (max-width:760px) {
+        flex-direction: column;
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .column {
+        .brick {
+            color: #fff;
+            margin: 30px;
+
+            &:nth-child(even) {
+                background-color: $yellow;
+
+                &>.brickBadge {
+                    background-color: $green;
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: $green;
+
+                &>.brickBadge {
+                    background-color: $yellow;
+                    color: #274C46;
+                }
+            }
+
+            .brickBadge {
+                position: absolute;
+                padding: 5px 15px;
+                display: flex;
+
+                @include dfja();
+
+                h6 {
+                    margin: 0;
+                }
+            }
+
+            .brickHeader {
+                img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .brickBody {
+
+                padding: 30px;
+            }
+        }
+    }
+}
+
+.dn {
+    display: none;
+}

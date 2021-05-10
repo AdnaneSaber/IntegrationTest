@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+.landing {
+  background-color: #274C46;
+}
+
+.landing .container.header {
+  padding: 0 5%;
+}
+
+.landing .container.header nav {
+  height: 80px;
+  padding: 0;
+}
+
+.landing .container.header nav .navbar-toggler {
+  background-color: #fc0;
+  color: #274C46;
+}
+
+.landing .container.header nav .collapse,
+.landing .container.header nav .collapsing {
+  background-color: #274C46;
+  z-index: 9;
+}
+
+.landing .container.header nav .collapse ul,
+.landing .container.header nav .collapsing ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.landing .container.header nav .collapse ul li.nav-item .nav-link,
+.landing .container.header nav .collapsing ul li.nav-item .nav-link {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.landing .container.header nav .collapse .navs,
+.landing .container.header nav .collapsing .navs {
+  background-color: #fc0;
+  height: 100%;
+  min-width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing .container.header nav .collapse .navs .nava,
+.landing .container.header nav .collapsing .navs .nava {
+  width: 33.33%;
+  text-align: center;
+  height: 45px;
+  position: relative;
+  color: #274C46;
+  font-size: 30px;
+}
+
+.landing .carouselContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .carouselContainer .carousel.slide {
+  height: 500px;
+}
+
+.landing .carouselContainer .carousel.slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.landing .carouselContainer .carousel.slide * {
+  height: 100%;
+}
+
+.landing .carouselContainer .carouselContent {
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 4px solid #fc0;
+}
+
+.landing .carouselContainer .carouselContent h5 {
+  color: #fff;
+}
+
+.secondDiv {
+  padding: 2%;
+}
+
+.secondDiv .swiper-button:after,
+.secondDiv .swiper-button:after {
+  color: #274C46 !important;
+}
+
+.secondDiv .slidCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.secondDiv .slidCard h6 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.thirdDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+  position: relative;
+}
+
+@media screen and (max-width: 760px) {
+  .thirdDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.thirdDiv h2 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.thirdDiv .column .brick {
+  color: #fff;
+  margin: 30px;
+}
+
+.thirdDiv .column .brick:nth-child(even) {
+  background-color: #fc0;
+}
+
+.thirdDiv .column .brick:nth-child(even) > .brickBadge {
+  background-color: #274C46;
+}
+
+.thirdDiv .column .brick:nth-child(odd) {
+  background-color: #274C46;
+}
+
+.thirdDiv .column .brick:nth-child(odd) > .brickBadge {
+  background-color: #fc0;
+  color: #274C46;
+}
+
+.thirdDiv .column .brick .brickBadge {
+  position: absolute;
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thirdDiv .column .brick .brickBadge h6 {
+  margin: 0;
+}
+
+.thirdDiv .column .brick .brickHeader img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.thirdDiv .column .brick .brickBody {
+  padding: 30px;
+}
+
+.dn {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
